@@ -26,7 +26,7 @@ DEFAULT_SETTINGS = {
         'units': 'mBTC'
         },
     'donate': {
-        'optout': False
+        'optout': True
         },
     'excavator_miner': {
         'listen': '',
@@ -56,7 +56,7 @@ def read_settings_from_file(fd):
             'units': parser.get
             },
         'donate': {
-            'optout': parser.getboolean
+            'optout': True
             },
         'excavator_miner': {
             'listen': parser.get,
